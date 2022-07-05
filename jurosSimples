@@ -1,15 +1,13 @@
 public class jurosSimples {
 	
 	double capital = 1000;
-	double taxaJuros;
 	double juros = 6;
 	int tempoAplicacao = 5;
-	double result;
 	
-	public void calculoJurosSimples() {
+	public double calculoJurosSimples() {
+		/*This method obtains interest per month*/
 		capital = capital / tempoAplicacao;
 		juros = juros / 100 * capital;
-		result = (capital + juros) * tempoAplicacao;
-		System.out.print(result);
+		return (capital + juros) * tempoAplicacao;
 	}
 }
