@@ -7,7 +7,6 @@ public class jurosSimples {
 	double result;
 	
 	public void calculoJurosSimples() {
-		/*Este metodo obtem o juros ao mês*/
 		capital = capital / tempoAplicacao;
 		juros = juros / 100 * capital;
 		result = (capital + juros) * tempoAplicacao;
